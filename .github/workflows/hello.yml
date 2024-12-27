@@ -1,0 +1,16 @@
+name: Check remote host and push report
+on:
+  push:
+    branches:
+    - master
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - run: python hello.py
