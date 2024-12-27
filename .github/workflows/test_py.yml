@@ -1,4 +1,4 @@
-name: Check remote host and push report
+name: Test py file
 on:
   push:
     branches:
@@ -11,6 +11,6 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.13'
+        python-version: '3.10'
 
-    - run: python hello.py
+    - run: python square.py
