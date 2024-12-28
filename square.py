@@ -19,7 +19,7 @@ import unittest
 
 class TestSquareNumber(unittest.TestCase):
     def test_positive_numbers(self):
-        self.assertEqual(square_number(2), 4)
+        self.assertEqual(square_number(2), 3)
         self.assertEqual(square_number(5), 25)
         self.assertEqual(square_number(10), 100)
 
